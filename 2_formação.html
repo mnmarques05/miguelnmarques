@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação</title>
+    <!--- código css -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            list-style: none
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 35px 12%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 25px;
+            color: #555;
+            font-weight: 600;
+        }
+
+        span {
+            color: dodgerblue;
+        }
+        .navbar a {
+            font-size: 18px;
+            color: #555;
+            font-weight: 500;
+            margin: 0 20px;
+            border-bottom: 3px solid transparent;
+            transition: 0.3s ease;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            color: dodgerblue;
+            border-bottom: 3px solid dodgerblue;
+        }
+
+        .formacao {
+            width: 100%;
+            min-height: 100vn;
+            background: white;
+            display: flex;
+            align-items: center;
+            gap: 7em;
+            padding: 150px 13% 0;
+        }
+
+        .formacao-conteudo {
+            max-width: 800px;
+        }
+
+        .formacao-conteudo h3 {
+            font-size: 43px;
+        }
+
+        .formacao-conteudo h2 {
+            font-size: 27px;
+            line-height: 1.2;
+        }
+
+        .formacao-conteudo p {
+            font-size: 18px;
+            margin: 15px 0 10px;
+        }
+
+        .caixa-imagem img {
+            border-radius: 50%;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>M</span>iguel</a>
+        <!--barra de navegação-->
+        <nav class="navbar">
+            <a href="1_sobre_mim.html">Sobre mim</a>
+            <a href="2_formação.html" class="active">Formação</a>
+            <a href="3_portfólio.html">Portfólio</a>
+            <a href="4_contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <section class="formacao">
+        <!--imagem-->
+        <div class="caixa-imagem">
+            <img src="images/formatura.jpeg" alt="foto de formatura do ensino médio" title="foto de formatura do ensino médio">
+        </div>
+        <!--texto da página-->
+        <div class="formacao-conteudo">
+            <h2>Minha <span>formação</span></h2>
+            <h3>Estudante de <span>ADS</span></h3>
+            <p>Estou cursando Análise e Desenvolvimento de Sistemas (ADS) no Centro Universitário Internacional UNINTER, com previsão de conclusão em agosto de 2026. Durante o curso, adquiro conhecimentos sólidos em programação, banco de dados, engenharia de software, redes de computadores e segurança da informação.</p>
+
+            <p>Tenho um interesse especial em desenvolvimento de software, focando em Python. Pretendo criar aplicações robustas e escaláveis, especialmente em desenvolvimento web, inteligência artificial e ciência de dados.</p>
+
+            <p>Aprendi inglês de forma autodidata utilizando vídeos no YouTube, o que tem sido essencial para acompanhar as inovações tecnológicas globais.</p>
+
+            <p>Meu objetivo é contribuir para projetos que resolvam problemas reais através da tecnologia e buscar novos desafios para crescer profissionalmente.</p>
+        </div>
+        
+    </section>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim</title>
+    <!--- código css -->
+    <style> 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            list-style: none
+        }
+
+        .cabeçalho {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 35px 12%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 25px;
+            color: #555;
+            font-weight: 600;
+        }
+        
+        span {
+            color: dodgerblue;
+        }
+        .navbar a {
+            font-size: 18px;
+            color: #555;
+            font-weight: 500;
+            margin: 0 20px;
+            border-bottom: 3px solid transparent;
+            transition: 0.3s ease;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            color: dodgerblue;
+            border-bottom: 3px solid dodgerblue;
+        }
+
+        .home {
+            width: 100%;
+            min-height: 100vn;
+            background: white;
+            display: flex;
+            align-items: center;
+            gap: 7em;
+            padding: 150px 13% 0;
+        }
+
+        .conteudo {
+            max-width: 800px;
+        }
+
+        .conteudo h4 {
+            font-size: 30px;
+        }
+
+        .conteudo h1 {
+            font-size: 60px
+        }
+
+        .conteudo h3 {
+            font-size: 40px;
+            line-height: 1.2;
+        }
+
+        .conteudo p {
+            font-size: 18px;
+            margin: 25px 0 30px;
+        }
+
+        .caixa-imagem img {
+            border-radius: 50%;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <header class="cabeçalho">
+        <a href="#" class="logo"><span>M</span>iguel</a>
+        <!--barra de navegação-->
+        <nav class="navbar">
+            <a href="1_sobre_mim.html" class="active">Sobre mim</a> <!--deixar em destaque a página atual-->
+            <a href="2_formação.html">Formação</a>
+            <a href="3_portfólio.html">Portfólio</a>
+            <a href="4_contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <!--texto da página-->
+        <div class="conteudo">
+            <h4>Oi</h4>
+
+            <h1>Sou o <span>Miguel<br></span></h1>
+
+            <h3>Estudante de ADS</h3>
+
+            <p>Um universitário de Análise e Desenvolvimento de Sistemas, apaixonado pelo mundo da tecnologia.</p>
+        </div>
+        <!--imagem-->
+        <div class="caixa-imagem">
+            <img src="images/formatura.jpeg" alt="foto de formatura do ensino médio" title="foto de formatura do ensino médio">
+        </div>
+    </section>
+</body>
+</html>
